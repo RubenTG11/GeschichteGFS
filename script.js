@@ -14,3 +14,8 @@ var swiper = new Swiper(".mySwiper2", {
   },
   mousewheel: true,
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems, options);
+});
